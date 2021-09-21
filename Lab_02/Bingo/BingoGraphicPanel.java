@@ -11,7 +11,7 @@ public class BingoGraphicPanel extends JPanel {
 	
 	public BingoGraphicPanel() {
 		try {
-			BlankBingo = ImageIO.read(new File("BlankBingoCard.jpg"));
+			BlankBingo = ImageIO.read(BingoGraphicPanel.class.getResource("/Image/BlankBingoCard"));
 		} catch (Exception e) {
 			System.out.println("Exception Error");
 			return;
